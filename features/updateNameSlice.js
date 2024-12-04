@@ -12,6 +12,12 @@ const updateNameSlice=createSlice({
     userReducer : (state,action) => {
         // state.name = action.payload.name
     },
+    updateAgeReducer: (state,action) => {
+        
+    },
+    updateAgeSuccess: (state,action) => {
+        state.age = action.payload
+    },
     updateNameSuccess: (state,action) => {
         state.name = action.payload
     },
@@ -21,5 +27,5 @@ const updateNameSlice=createSlice({
    }
 
 })
-export const {userReducer,updateNameSuccess,updateNameFailure}=updateNameSlice.actions
+export const {userReducer,updateNameSuccess,updateNameFailure,updateAgeReducer,updateAgeSuccess}=updateNameSlice.actions
 export default updateNameSlice.reducer
